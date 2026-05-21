@@ -18,4 +18,11 @@ These documents are the engineering source of truth for the project. The raw res
 - Raw notes, conversation dumps, and uncurated links belong in `docs/research/`.
 - Hardware stubs belong in `hardware/`.
 - Firmware stubs belong in `firmware/`.
+- Tools, calibration, tests, and manufacturing stubs document roadmap boundaries until real artifacts exist.
 - No document may claim production readiness without bench test evidence.
+
+## Initial Product Scope
+
+- Primary target: single-cylinder 2-stroke motorcycle engines under 200cc.
+- Future-compatible target: 4-stroke support through engine profiles and scheduling rules.
+- Non-target: a CDI locked to one motorcycle brand, model, or engine.

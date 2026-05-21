@@ -6,6 +6,18 @@ Build a real programmable DC-CDI system with separated control and high-voltage 
 
 This project is not just an ignition timing controller. It must eventually include the CDI power core: HV charger, HV discharge capacitor, SCR/IGBT discharge switch, and CDI ignition coil output.
 
+## Target Application
+
+The first target application is small single-cylinder motorcycle ignition:
+
+- Primary focus: 2-stroke engines under 200cc.
+- Initial cylinder count: single cylinder.
+- Initial ignition output: one CDI coil.
+- Future compatibility: 4-stroke support should remain possible, but it is not the first validation target.
+- Non-target: one-off design locked to a single motorcycle brand, model, or engine.
+
+Engine-specific differences belong in calibration profiles and wiring notes, not in hardcoded assumptions inside the core CDI design.
+
 ## Non-Goals For The First Phase
 
 - No engine testing before bench validation.
@@ -13,6 +25,7 @@ This project is not just an ignition timing controller. It must eventually inclu
 - No production-ready claim.
 - No exact component part numbers until electrical targets and tests justify them.
 - No firmware framework choice until module contracts and tests are defined.
+- No brand-specific or engine-specific lock-in during the core CDI design phase.
 
 ## First Engineering Milestone
 

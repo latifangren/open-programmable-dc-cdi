@@ -2,6 +2,8 @@
 
 Open Programmable DC-CDI is an experimental project to build a real programmable DC-CDI system, not a controller-only ignition project and not a TCI coil driver.
 
+The first target is small single-cylinder motorcycles, especially 2-stroke engines under 200cc. The architecture should not intentionally block later 4-stroke support, but 4-stroke behavior is not the first validation target.
+
 A real DC-CDI system must include the CDI power core:
 
 - 12V input protection and high-voltage charger
@@ -56,6 +58,16 @@ Start here:
 - [Bench test plan](docs/05-bench-test-plan.md)
 - [Production checklist](docs/06-production-checklist.md)
 - [Research archive](docs/research/README.md)
+
+## Repository Layout
+
+- `docs/` - canonical engineering docs and research archive.
+- `hardware/` - controller board, CDI power board, pickup conditioner, interfaces, fixtures, and mechanical notes.
+- `firmware/` - controller firmware skeleton, timing modules, drivers, safety, logging, and tests.
+- `tools/` - bench and field utilities such as pickup simulator, map editor, log viewer, and flasher.
+- `calibration/` - draft maps and engine profiles after bench validation rules exist.
+- `tests/` - bench, engine, and report artifacts. Engine tests are blocked until bench gates pass.
+- `manufacturing/` - future production outputs, assembly notes, QC checklist, and test fixture data.
 
 ## Development Order
 

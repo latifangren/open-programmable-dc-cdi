@@ -12,7 +12,7 @@ Status: draft targets. Values below are starting points for design and bench tes
 | HV capacitor voltage, Vcap | 250V / 300V / 350V selectable | Exact range depends on coil, capacitor, and test results. |
 | Spark energy target | 30 mJ to 80 mJ draft range | Must be proven on bench before engine test. |
 | Maximum RPM target | 12,000 RPM initial, 20,000 RPM stretch | Single-cylinder timing budget first. |
-| Engine target | Single-cylinder 2T/4T, TBD | Exact engine profile not locked. |
+| Engine target | Single-cylinder 2T under 200cc first | 4T support remains future-compatible, not the first validation target. |
 | Pickup type | VR / Hall / pulser input supported by conditioner | Raw GPIO/ADC input is not a production target. |
 | Ignition coil type | CDI ignition coil | Not a 12V inductive TCI coil. |
 | Discharge switch | SCR or IGBT class, TBD | No part number selected. |
