@@ -12,6 +12,7 @@ These documents are the engineering source of truth for the project. The raw res
 6. [05-bench-test-plan.md](05-bench-test-plan.md) - bench-first validation before engine testing.
 7. [06-production-checklist.md](06-production-checklist.md) - what must exist before production-candidate status.
 8. [07-engine-target-and-design-budget.md](07-engine-target-and-design-budget.md) - initial engine scope, RPM, spark energy, and charger budget.
+9. [08-power-stage-architecture.md](08-power-stage-architecture.md) - initial HV charger, discharge switch, Vcap, and safety architecture direction.
 
 ## Source Rules
 
