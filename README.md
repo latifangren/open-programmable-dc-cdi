@@ -32,6 +32,7 @@ No production hardware, firmware, schematic, PCB layout, BOM, or validated bench
 | Board interface contract | Draft |
 | Failure modes | Draft |
 | Requirements traceability | Draft |
+| First prototype decisions | Draft |
 | Controller schematic | Not started |
 | CDI power schematic | Not started |
 | Firmware implementation | Not started |
@@ -84,6 +85,7 @@ Start here:
 - [Board interface contract](docs/12-board-interface-contract.md)
 - [Failure modes](docs/13-failure-modes.md)
 - [Requirements traceability](docs/14-requirements-traceability.md)
+- [First prototype decisions](docs/15-first-prototype-decisions.md)
 - [Research archive](docs/research/README.md)
 
 ## Repository Layout

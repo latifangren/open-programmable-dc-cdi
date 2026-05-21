@@ -1,6 +1,6 @@
 # Component Candidate Matrix
 
-Status: v0.1 research matrix. This is not a BOM and does not select final part numbers.
+Status: v0.2 research matrix. This is not a BOM and does not select final part numbers.
 
 ## Purpose
 
@@ -29,6 +29,13 @@ Required candidate status labels:
 | Production candidate | Requires bench history and manufacturing review. |
 
 No part should jump from research only to production candidate.
+
+## Source And Extraction Rules
+
+- Put directly verified source facts in candidate rows only when the source was readable enough to verify the value.
+- Mark raw PDF fetches, 404 pages, and unreadable pages as source-access status, not as extracted datasheet values.
+- Keep `TBD datasheet` when the value still needs manual datasheet extraction.
+- A vendor product page can confirm family-level suitability, package, voltage class, and marketing status, but it does not replace full datasheet review.
 
 ## HV Capacitor Matrix
 
@@ -59,7 +66,7 @@ Reject if:
 
 | Vendor | Part | VDRM/VRRM | ITSM | I2t | IGT/VGT | dV/dt | Package | Status | Notes |
 | --- | --- | ---: | ---: | ---: | --- | ---: | --- | --- | --- |
-| STMicroelectronics | TYN/TN 600V to 800V class | 600V to 800V class | TBD datasheet | TBD datasheet | TBD datasheet | TBD datasheet | TO-220 class | Research only | Common SCR family direction; verify gate current and repetitive pulse behavior. |
+| STMicroelectronics | TYN612RG / TYN612TRG | 600V verified on ST product page | TBD datasheet | TBD datasheet | 15 mA max for TYN612RG, 5 mA max for TYN612TRG verified on ST product page | 200 V/us min for TYN612RG, 40 V/us min for TYN612TRG verified on ST product page | TO-220AB verified on ST product page | Research only | ST page describes 12A standard SCR series and lists capacitive discharge ignition as an application. Full datasheet extraction still required. |
 | Littelfuse | Sx010L / Sx012L class | 600V to 800V class | TBD datasheet | TBD datasheet | TBD datasheet | TBD datasheet | TO-220 class | Research only | Bench candidate family if surge and gate specs match driver. |
 | WeEn / Nexperia | BT151 / BT152 class | 600V to 800V class | TBD datasheet | TBD datasheet | TBD datasheet | TBD datasheet | TO-220 class | Research only | Widely available SCR family; verify dV/dt and gate sensitivity variants. |
 | Vishay | VS-xxTTS08 / phase-control discrete class | 800V class | TBD datasheet | TBD datasheet | TBD datasheet | TBD datasheet | TO-220 / TO-263 class | Research only | Larger rugged comparison; may be overkill but useful for bench margin. |
@@ -87,6 +94,12 @@ Reject if:
 | TBD | Pulse transformer | Pulse | TBD | TBD | No pulse | Research only | Good transient separation if suitable. |
 | TBD | Protected non-isolated driver | Current pulse | TBD | TBD | Off | Research only | Low-voltage bench only unless justified. |
 
+v0.2 direction:
+
+- Prefer pulse transformer or optocoupler trigger path for the first HV bench prototype.
+- Use non-isolated protected trigger only for low-voltage timing bench or if later grounding review justifies it.
+- Do not connect `TRIGGER_CMD` directly to an SCR gate.
+
 Hard requirements:
 
 - No trigger on controller reset.
@@ -102,6 +115,12 @@ Hard requirements:
 | TBD | Dedicated capacitor charger | TBD | TBD | TBD | Vcap divider | TBD | Research only | Check repetition-rate suitability. |
 | TBD | MCU PWM + analog limit | 9V-16V target | 250V-350V | External required | ADC/comparator | Firmware + hardware | Research only | Flexible but must not rely on firmware alone. |
 | TBD | Self-oscillating reference | TBD | TBD | Weak/TBD | Poor/TBD | TBD | Rejected for baseline | Reference only unless project scope changes. |
+
+v0.2 direction:
+
+- First prototype should use MCU-supervised control only if an analog current limit and hardware-safe disable path exist.
+- Dedicated capacitor-charger control remains attractive if a sourceable controller and transformer path are found.
+- Self-oscillating charger remains rejected for baseline because it weakens regulation and fault logging.
 
 Hard requirements:
 
@@ -168,6 +187,12 @@ Hard requirements:
 | 4x 1M high-side + 27k low-side | 149.1:1 | 4.027 Mohm | 450V target | 0V to 3.3V ADC class | About 112.5V per high-side resistor at 450V before transients | RC filter, clamp, possible ADC buffer | Research only | Lower bleed loss; ADC settling/noise needs more care. |
 | 5x 1M high-side + 33k low-side | 152.5:1 | 5.033 Mohm | 450V target | 0V to 3.3V ADC class | About 90V per high-side resistor at 450V before transients | RC filter, clamp, likely ADC sampling guard time | Research only | Very low divider current; may be too high impedance without buffer or slow sampling. |
 
+v0.2 first-prototype direction:
+
+- Prefer `5x 470k high-side + 15k low-side` as first divider candidate if exact high-voltage resistor ratings check out.
+- Reason: similar ADC mapping to the 390k chain, lower divider loss, and lower source impedance than 1M-chain options.
+- Do not promote it above `Research only` until exact resistor voltage rating, package, tolerance, tempco, and ADC sampling behavior are verified.
+
 Hard requirements:
 
 - Measures above 350V target with margin.
@@ -215,6 +240,18 @@ A candidate can become `Selected for prototype` only after:
 5. It fits the current block design.
 
 Prototype selection is not production selection.
+
+## Source Access Log
+
+| Source | Fetch Result | Extracted Values | Next Action |
+|---|---|---|---|
+| STMicroelectronics `TYN612` product page | Readable vendor page | Active status, 12A standard SCR series, 600V VDRM/VRRM entries, TO-220AB package, gate current variants, dV/dt variants, CDI listed as application | Extract full datasheet fields: ITSM, I2t, IL/IH, VGT, thermal, package limits |
+| STMicroelectronics `tyn612.pdf` | PDF fetched but tool output was raw PDF text | None trusted from PDF body | Manual PDF extraction required |
+| Cornell Dubilier `940C.pdf` | PDF fetched but tool output was raw/truncated PDF text | None trusted from PDF body | Manual PDF extraction required |
+| Cornell Dubilier `942C.pdf` | PDF fetched but tool output was raw/truncated PDF text | None trusted from PDF body | Manual PDF extraction required |
+| Cornell Dubilier 940C/942C product pages tried | 404 | None | Use current vendor catalog path or distributor datasheet link |
+| WIMA FKP1/MKP10 PDF URLs tried | Transport error | None | Retry from WIMA product pages or distributor datasheets |
+| TDK film capacitor page tried | Non-2xx response | None | Use current TDK/EPCOS catalog search path |
 
 ## v0.1 Conclusion
 

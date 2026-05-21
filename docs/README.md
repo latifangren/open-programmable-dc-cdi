@@ -19,6 +19,7 @@ These documents are the engineering source of truth for the project. The raw res
 13. [12-board-interface-contract.md](12-board-interface-contract.md) - controller/power-board signal defaults, fault behavior, and open interface decisions.
 14. [13-failure-modes.md](13-failure-modes.md) - draft failure-mode list with detection, mitigation direction, and test coverage IDs.
 15. [14-requirements-traceability.md](14-requirements-traceability.md) - requirement IDs mapped to planned verification artifacts.
+16. [15-first-prototype-decisions.md](15-first-prototype-decisions.md) - first HV prototype candidate decisions and remaining schematic blockers.
 
 ## Source Rules
 
