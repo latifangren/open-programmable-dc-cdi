@@ -1,0 +1,21 @@
+﻿# Documentation Index
+
+These documents are the engineering source of truth for the project. The raw research notes stay under `docs/research/` for provenance only.
+
+## Reading Order
+
+1. [00-project-goals.md](00-project-goals.md) - project identity, scope, and non-goals.
+2. [01-cdi-theory.md](01-cdi-theory.md) - CDI vs TCI vs trigger-controller distinction.
+3. [02-system-architecture.md](02-system-architecture.md) - final controller board and CDI power board split.
+4. [03-electrical-spec.md](03-electrical-spec.md) - draft electrical targets and open decisions.
+5. [04-hv-safety.md](04-hv-safety.md) - high-voltage safety rules and test gates.
+6. [05-bench-test-plan.md](05-bench-test-plan.md) - bench-first validation before engine testing.
+7. [06-production-checklist.md](06-production-checklist.md) - what must exist before production-candidate status.
+
+## Source Rules
+
+- Canonical engineering decisions belong in numbered files under `docs/`.
+- Raw notes, conversation dumps, and uncurated links belong in `docs/research/`.
+- Hardware stubs belong in `hardware/`.
+- Firmware stubs belong in `firmware/`.
+- No document may claim production readiness without bench test evidence.
