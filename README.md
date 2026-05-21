@@ -20,6 +20,25 @@ Status: documentation and repository skeleton stage.
 
 No production hardware, firmware, schematic, PCB layout, BOM, or validated bench result exists yet. This repository should not claim production readiness until the electrical spec, safety checks, bench tests, manufacturing files, and test reports exist.
 
+## Project Maturity
+
+| Area | Status |
+|---|---|
+| Architecture | Drafted |
+| Electrical spec | Drafted |
+| HV safety rules | Drafted |
+| Power-stage block design | Drafted |
+| Component candidates | Research only |
+| Board interface contract | Draft |
+| Failure modes | Draft |
+| Requirements traceability | Draft |
+| Controller schematic | Not started |
+| CDI power schematic | Not started |
+| Firmware implementation | Not started |
+| Bench test logs | Not started |
+| Engine test | Blocked |
+| Production files | Not started |
+
 ## Architecture
 
 The project is split into two boards:
@@ -58,6 +77,13 @@ Start here:
 - [Bench test plan](docs/05-bench-test-plan.md)
 - [Production checklist](docs/06-production-checklist.md)
 - [Engine target and design budget](docs/07-engine-target-and-design-budget.md)
+- [Power stage architecture](docs/08-power-stage-architecture.md)
+- [Power stage block design](docs/09-power-stage-block-design.md)
+- [Component candidate matrix](docs/10-component-candidate-matrix.md)
+- [PCB and test jig plan](docs/11-pcb-and-test-jig-plan.md)
+- [Board interface contract](docs/12-board-interface-contract.md)
+- [Failure modes](docs/13-failure-modes.md)
+- [Requirements traceability](docs/14-requirements-traceability.md)
 - [Research archive](docs/research/README.md)
 
 ## Repository Layout

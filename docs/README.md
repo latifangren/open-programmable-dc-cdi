@@ -16,6 +16,9 @@ These documents are the engineering source of truth for the project. The raw res
 10. [09-power-stage-block-design.md](09-power-stage-block-design.md) - first block-level design gate before schematic work.
 11. [10-component-candidate-matrix.md](10-component-candidate-matrix.md) - candidate comparison tables and promotion rules.
 12. [11-pcb-and-test-jig-plan.md](11-pcb-and-test-jig-plan.md) - bench-first PCB and fixture planning.
+13. [12-board-interface-contract.md](12-board-interface-contract.md) - controller/power-board signal defaults, fault behavior, and open interface decisions.
+14. [13-failure-modes.md](13-failure-modes.md) - draft failure-mode list with detection, mitigation direction, and test coverage IDs.
+15. [14-requirements-traceability.md](14-requirements-traceability.md) - requirement IDs mapped to planned verification artifacts.
 
 ## Source Rules
 
