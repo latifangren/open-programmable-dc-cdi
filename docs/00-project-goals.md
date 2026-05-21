@@ -13,6 +13,7 @@ The first target application is small single-cylinder motorcycle ignition:
 - Primary focus: 2-stroke engines under 200cc.
 - Initial cylinder count: single cylinder.
 - Initial ignition output: one CDI coil.
+- Initial fuel-system context: older carbureted motorcycles, not EFI integration.
 - Future compatibility: 4-stroke support should remain possible, but it is not the first validation target.
 - Non-target: one-off design locked to a single motorcycle brand, model, or engine.
 
@@ -23,6 +24,7 @@ Engine-specific differences belong in calibration profiles and wiring notes, not
 - No engine testing before bench validation.
 - No web UI, quickshifter, launch control, traction control, or anti-wheelie work.
 - No production-ready claim.
+- No EFI, injector, fuel-map, or full ECU replacement work.
 - No exact component part numbers until electrical targets and tests justify them.
 - No firmware framework choice until module contracts and tests are defined.
 - No brand-specific or engine-specific lock-in during the core CDI design phase.

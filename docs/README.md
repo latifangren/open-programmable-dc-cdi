@@ -11,6 +11,7 @@ These documents are the engineering source of truth for the project. The raw res
 5. [04-hv-safety.md](04-hv-safety.md) - high-voltage safety rules and test gates.
 6. [05-bench-test-plan.md](05-bench-test-plan.md) - bench-first validation before engine testing.
 7. [06-production-checklist.md](06-production-checklist.md) - what must exist before production-candidate status.
+8. [07-engine-target-and-design-budget.md](07-engine-target-and-design-budget.md) - initial engine scope, RPM, spark energy, and charger budget.
 
 ## Source Rules
 
@@ -24,5 +25,6 @@ These documents are the engineering source of truth for the project. The raw res
 ## Initial Product Scope
 
 - Primary target: single-cylinder 2-stroke motorcycle engines under 200cc.
+- Fuel system target: older carbureted motorcycles, not EFI integration.
 - Future-compatible target: 4-stroke support through engine profiles and scheduling rules.
 - Non-target: a CDI locked to one motorcycle brand, model, or engine.

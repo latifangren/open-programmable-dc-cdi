@@ -2,7 +2,7 @@
 
 Open Programmable DC-CDI is an experimental project to build a real programmable DC-CDI system, not a controller-only ignition project and not a TCI coil driver.
 
-The first target is small single-cylinder motorcycles, especially 2-stroke engines under 200cc. The architecture should not intentionally block later 4-stroke support, but 4-stroke behavior is not the first validation target.
+The first target is older carbureted small single-cylinder motorcycles, especially 2-stroke engines under 200cc. The architecture should not intentionally block later 4-stroke support, but 4-stroke behavior is not the first validation target.
 
 A real DC-CDI system must include the CDI power core:
 
@@ -57,6 +57,7 @@ Start here:
 - [High-voltage safety](docs/04-hv-safety.md)
 - [Bench test plan](docs/05-bench-test-plan.md)
 - [Production checklist](docs/06-production-checklist.md)
+- [Engine target and design budget](docs/07-engine-target-and-design-budget.md)
 - [Research archive](docs/research/README.md)
 
 ## Repository Layout
