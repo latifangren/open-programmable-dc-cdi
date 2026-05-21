@@ -7,6 +7,7 @@ This folder keeps raw research and source material. It is not the canonical engi
 - `sources.md` keeps the raw reference list.
 - `reference-repo-analysis.md` compares external ignition repositories against this project's real DC-CDI scope.
 - `scr-discharge-research.md` summarizes SCR discharge-stage requirements and bench risks.
+- `hv-capacitor-research.md` summarizes CDI storage capacitor requirements and pulse-rating risks.
 
 Canonical project docs are extracted into numbered files under `docs/`.
 
