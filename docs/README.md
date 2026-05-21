@@ -13,6 +13,9 @@ These documents are the engineering source of truth for the project. The raw res
 7. [06-production-checklist.md](06-production-checklist.md) - what must exist before production-candidate status.
 8. [07-engine-target-and-design-budget.md](07-engine-target-and-design-budget.md) - initial engine scope, RPM, spark energy, and charger budget.
 9. [08-power-stage-architecture.md](08-power-stage-architecture.md) - initial HV charger, discharge switch, Vcap, and safety architecture direction.
+10. [09-power-stage-block-design.md](09-power-stage-block-design.md) - first block-level design gate before schematic work.
+11. [10-component-candidate-matrix.md](10-component-candidate-matrix.md) - candidate comparison tables and promotion rules.
+12. [11-pcb-and-test-jig-plan.md](11-pcb-and-test-jig-plan.md) - bench-first PCB and fixture planning.
 
 ## Source Rules
 

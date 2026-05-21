@@ -8,6 +8,9 @@ This folder keeps raw research and source material. It is not the canonical engi
 - `reference-repo-analysis.md` compares external ignition repositories against this project's real DC-CDI scope.
 - `scr-discharge-research.md` summarizes SCR discharge-stage requirements and bench risks.
 - `hv-capacitor-research.md` summarizes CDI storage capacitor requirements and pulse-rating risks.
+- `flyback-charger-research.md` summarizes HV capacitor charger requirements, control options, and bench risks.
+- `vcap-measurement-research.md` summarizes Vcap feedback requirements, divider risks, and calibration gates.
+- `component-candidate-notes.md` records first real candidate families for HV capacitor, SCR, and Vcap divider research.
 
 Canonical project docs are extracted into numbered files under `docs/`.
 
