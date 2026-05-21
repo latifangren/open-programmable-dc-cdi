@@ -6,6 +6,7 @@ This folder keeps raw research and source material. It is not the canonical engi
 - `raw-user-research.md` preserves the original long research notes and transcript.
 - `sources.md` keeps the raw reference list.
 - `reference-repo-analysis.md` compares external ignition repositories against this project's real DC-CDI scope.
+- `scr-discharge-research.md` summarizes SCR discharge-stage requirements and bench risks.
 
 Canonical project docs are extracted into numbered files under `docs/`.
 
