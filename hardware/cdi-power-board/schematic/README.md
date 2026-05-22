@@ -2,6 +2,8 @@
 
 Placeholder for future schematic files.
 
+Before schematic capture, review [../schematic-checklist.md](../schematic-checklist.md). Passing that checklist still does not create a validated design, BOM, PCB, or engine-test permission.
+
 Required schematic blocks:
 
 - 12V input protection.

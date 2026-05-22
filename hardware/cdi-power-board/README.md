@@ -23,4 +23,6 @@ Must not:
 
 Safety note: this board can store dangerous energy after power-off. Read `docs/04-hv-safety.md` before design or test work.
 
+Pre-schematic review checklist: [schematic-checklist.md](schematic-checklist.md).
+
 No power-stage implementation exists yet.
