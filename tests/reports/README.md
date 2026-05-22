@@ -18,6 +18,7 @@ No completed bench report exists yet. Not-run stubs are planning artifacts only,
 
 - [../bench/procedures/](../bench/procedures/) - planned procedures only; not validation evidence by themselves.
 - [../bench/procedures/low-voltage-dry-run.md](../bench/procedures/low-voltage-dry-run.md) - low-voltage dry-run procedure planned for the first controller-side bench check.
+- [../bench/procedures/hv-charger-disabled-discharge.md](../bench/procedures/hv-charger-disabled-discharge.md) - planned HV charger-only procedure for the HV charge report template; not validation evidence.
 - [../bench/artifacts/logs/minimal-bench-log-template.csv](../bench/artifacts/logs/minimal-bench-log-template.csv) - header-only log template with no measured rows.
 
 ## Templates

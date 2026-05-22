@@ -10,6 +10,7 @@ No bench test has been run yet. Files here are placeholders until a report recor
 
 - [procedures/](procedures/) - planned bench procedures.
 - [procedures/low-voltage-dry-run.md](procedures/low-voltage-dry-run.md) - first low-voltage dry-run procedure with HV and engine testing excluded.
+- [procedures/hv-charger-disabled-discharge.md](procedures/hv-charger-disabled-discharge.md) - planned Phase 3 HV charger procedure with discharge disabled.
 
 ## Artifact Storage
 
