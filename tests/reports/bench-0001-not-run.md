@@ -23,6 +23,7 @@ Planned procedure and setup references:
 - [Low-voltage dry-run procedure](../bench/procedures/low-voltage-dry-run.md)
 - [Low-voltage dry-run readiness](../bench/procedures/low-voltage-dry-run-readiness.md)
 - [Minimal bench log template](../bench/artifacts/logs/minimal-bench-log-template.csv)
+- [Low-voltage timing capture template](../bench/artifacts/scope-captures/low-voltage-timing-capture-template.md)
 
 Included planned behavior:
 

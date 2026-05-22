@@ -15,4 +15,8 @@ Every capture should record:
 - grounding or isolation method,
 - Vcap state before and after the test where relevant.
 
+## Templates
+
+- [low-voltage-timing-capture-template.md](low-voltage-timing-capture-template.md) - planned BENCH-0001 low-voltage timing capture template; not evidence by itself.
+
 HV secondary probing must not use unsafe direct probing. Captures are not validation evidence until linked from a reviewed report.

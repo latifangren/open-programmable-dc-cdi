@@ -11,6 +11,7 @@ Use this procedure to check that the controller-side bench setup can power up, a
 Related planning documents:
 
 - [Low-voltage dry-run readiness](low-voltage-dry-run-readiness.md)
+- [Low-voltage timing capture template](../artifacts/scope-captures/low-voltage-timing-capture-template.md)
 - [Bench test plan](../../../docs/05-bench-test-plan.md)
 - [High-voltage safety](../../../docs/04-hv-safety.md)
 - [Bench validation report template](../../../docs/validation/bench-test-template.md)
