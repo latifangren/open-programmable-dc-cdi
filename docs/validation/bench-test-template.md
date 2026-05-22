@@ -135,6 +135,8 @@ Bench logs should use the fields planned in `../05-bench-test-plan.md` where app
 time_us,rpm,advance_deg,vbat,vcap,charge_us,event,error
 ```
 
+A header-only CSV template is available at [../../tests/bench/artifacts/logs/minimal-bench-log-template.csv](../../tests/bench/artifacts/logs/minimal-bench-log-template.csv). The template is not a completed log and does not show measured evidence.
+
 ## Evidence Checklist
 
 - [ ] Test setup photo or diagram.
