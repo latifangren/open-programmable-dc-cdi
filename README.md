@@ -88,6 +88,7 @@ Start here:
 - [First prototype decisions](docs/15-first-prototype-decisions.md)
 - [Source-backed parts research](docs/research/source-backed-parts-research.md)
 - [CDI power-board requirements](hardware/cdi-power-board/requirements.md)
+- [CDI power-board test plan](hardware/cdi-power-board/test-plan.md)
 - [CDI power-board schematic checklist](hardware/cdi-power-board/schematic-checklist.md)
 - [Research archive](docs/research/README.md)
 

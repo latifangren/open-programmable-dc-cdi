@@ -25,6 +25,8 @@ Safety note: this board can store dangerous energy after power-off. Read `docs/0
 
 Pre-schematic requirements: [requirements.md](requirements.md).
 
+Pre-schematic test plan: [test-plan.md](test-plan.md).
+
 Pre-schematic review checklist: [schematic-checklist.md](schematic-checklist.md).
 
 No power-stage implementation exists yet.
