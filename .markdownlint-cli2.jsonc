@@ -1,0 +1,16 @@
+{
+  "config": {
+    "default": true,
+    "MD010": false,
+    "MD013": false,
+    "MD029": false,
+    "MD032": false,
+    "MD033": false,
+    "MD034": false,
+    "MD041": false,
+    "MD047": false,
+    "MD060": false
+  },
+  "globs": ["**/*.md"],
+  "ignores": [".git", ".omo", "node_modules", "docs/research/raw-user-research.md"]
+}
