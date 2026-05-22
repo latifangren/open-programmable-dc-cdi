@@ -11,6 +11,9 @@ This folder keeps raw research and source material. It is not the canonical engi
 - `flyback-charger-research.md` summarizes HV capacitor charger requirements, control options, and bench risks.
 - `vcap-measurement-research.md` summarizes Vcap feedback requirements, divider risks, and calibration gates.
 - `component-candidate-notes.md` records first real candidate families for HV capacitor, SCR, and Vcap divider research.
+- `datasheet-extraction-capacitors.md` records source-backed HV capacitor candidate facts and extraction gaps.
+- `datasheet-extraction-scr.md` records source-backed SCR candidate facts and extraction gaps.
+- `datasheet-extraction-vcap-divider.md` records source-backed Vcap divider resistor facts and extraction gaps.
 
 Canonical project docs are extracted into numbered files under `docs/`.
 
