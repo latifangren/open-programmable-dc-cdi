@@ -4,6 +4,17 @@ Status: placeholder.
 
 This folder is for bench test procedures, raw results, and analysis.
 
+No bench test has been run yet. Files here are placeholders until a report records measured evidence.
+
+## Artifact Storage
+
+- [artifacts/](artifacts/) - raw evidence storage rules.
+- [artifacts/logs/](artifacts/logs/) - future CSV logs, serial logs, and event logs.
+- [artifacts/scope-captures/](artifacts/scope-captures/) - future oscilloscope and logic-analyzer captures.
+- [artifacts/raw-data/](artifacts/raw-data/) - future unprocessed measurement files and setup photos.
+
+Summarized results belong in [../reports/](../reports/). Use [../../docs/validation/bench-test-template.md](../../docs/validation/bench-test-template.md) when creating a measured bench report.
+
 Expected bench areas:
 
 - Pickup simulator timing.
@@ -13,3 +24,5 @@ Expected bench areas:
 - Timing jitter.
 - Fault injection.
 - Thermal checks.
+
+Engine testing remains blocked until measured bench reports prove the required behavior.

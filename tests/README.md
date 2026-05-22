@@ -4,6 +4,14 @@ Status: placeholder.
 
 This folder is for validation artifacts outside firmware unit tests.
 
+Current status: no completed bench report or engine-test report exists yet.
+
+## Folders
+
+- [bench/](bench/) - future bench procedures, raw evidence, and analysis notes.
+- [reports/](reports/) - summarized report templates and not-run report stubs.
+- [engine/](engine/) - blocked until bench gates pass.
+
 Test order:
 
 1. Bench tests.
