@@ -9,6 +9,7 @@ Current status: no completed bench report or engine-test report exists yet.
 ## Folders
 
 - [bench/](bench/) - future bench procedures, raw evidence, and analysis notes.
+- [bench/procedures/](bench/procedures/) - planned bench procedures that are not evidence until measured reports exist.
 - [reports/](reports/) - summarized report templates and not-run report stubs.
 - [engine/](engine/) - blocked until bench gates pass.
 

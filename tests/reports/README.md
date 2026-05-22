@@ -14,6 +14,12 @@ No completed bench report exists yet. Not-run stubs are planning artifacts only,
 
 - [bench-0001-not-run.md](bench-0001-not-run.md) - first bench report slot; result is `Not run`.
 
+## Related Planning Artifacts
+
+- [../bench/procedures/](../bench/procedures/) - planned procedures only; not validation evidence by themselves.
+- [../bench/procedures/low-voltage-dry-run.md](../bench/procedures/low-voltage-dry-run.md) - low-voltage dry-run procedure planned for the first controller-side bench check.
+- [../bench/artifacts/logs/minimal-bench-log-template.csv](../bench/artifacts/logs/minimal-bench-log-template.csv) - header-only log template with no measured rows.
+
 ## Templates
 
 - `templates/timing-jitter-report.md`

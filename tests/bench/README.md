@@ -6,6 +6,11 @@ This folder is for bench test procedures, raw results, and analysis.
 
 No bench test has been run yet. Files here are placeholders until a report records measured evidence.
 
+## Procedures
+
+- [procedures/](procedures/) - planned bench procedures.
+- [procedures/low-voltage-dry-run.md](procedures/low-voltage-dry-run.md) - first low-voltage dry-run procedure with HV and engine testing excluded.
+
 ## Artifact Storage
 
 - [artifacts/](artifacts/) - raw evidence storage rules.
