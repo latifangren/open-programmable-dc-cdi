@@ -14,6 +14,7 @@ This folder keeps raw research and source material. It is not the canonical engi
 - `datasheet-extraction-capacitors.md` records source-backed HV capacitor candidate facts and extraction gaps.
 - `datasheet-extraction-scr.md` records source-backed SCR candidate facts and extraction gaps.
 - `datasheet-extraction-vcap-divider.md` records source-backed Vcap divider resistor facts and extraction gaps.
+- `source-backed-parts-research.md` summarizes the current source-backed shortlist while keeping every candidate at `Research only`.
 
 Canonical project docs are extracted into numbered files under `docs/`.
 
