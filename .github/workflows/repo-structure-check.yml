@@ -29,6 +29,9 @@ jobs:
       - name: Check required project structure
         run: node tools/ci/check-repo-structure.mjs
 
+      - name: Check minimal bench log template
+        run: node tools/ci/check-minimal-bench-log-template.mjs
+
       - name: Check release hygiene wording
         run: node tools/ci/check-release-hygiene.mjs
 
