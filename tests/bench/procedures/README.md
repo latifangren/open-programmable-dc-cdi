@@ -7,6 +7,7 @@ This folder contains step-by-step bench procedures. A procedure is not validatio
 ## Available Procedures
 
 - [low-voltage-dry-run.md](low-voltage-dry-run.md) - controller-side dry-run with HV charger, HV capacitor, discharge stage, CDI coil, and engine testing excluded.
+- [low-voltage-dry-run-readiness.md](low-voltage-dry-run-readiness.md) - pre-run readiness checklist for BENCH-0001; not validation evidence.
 
 ## Procedure Rules
 

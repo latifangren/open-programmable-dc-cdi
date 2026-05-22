@@ -10,6 +10,7 @@ Use this procedure to check that the controller-side bench setup can power up, a
 
 Related planning documents:
 
+- [Low-voltage dry-run readiness](low-voltage-dry-run-readiness.md)
 - [Bench test plan](../../../docs/05-bench-test-plan.md)
 - [High-voltage safety](../../../docs/04-hv-safety.md)
 - [Bench validation report template](../../../docs/validation/bench-test-template.md)
@@ -83,23 +84,24 @@ For this low-voltage dry-run, `vcap` and `charge_us` must be `0` only when the s
 
 ## Procedure
 
-1. Record operator, date, hardware revision, firmware or script revision, and bench setup reference.
-2. Confirm the required safe state and attach a setup photo or wiring diagram reference.
-3. Set the low-voltage bench supply current limit for controller-only work.
-4. Connect the pickup simulator or logic source with output disabled.
-5. Apply low-voltage power.
-6. Confirm low-voltage rails are stable.
-7. Confirm `CHARGE_EN` is inactive.
-8. Confirm `TRIGGER_CMD` is inactive before pickup pulses are applied.
-9. Enable the pickup simulator at the first low RPM-equivalent rate.
-10. Record RPM, advance, `vbat`, event, and error fields if logging is available.
-11. Observe the low-voltage timing output with a scope or logic analyzer.
-12. Repeat at the planned dry-run RPM-equivalent rates.
-13. Trigger a reset or watchdog-equivalent event if the setup supports it.
-14. Confirm `CHARGE_EN` and `TRIGGER_CMD` return to inactive safe state.
-15. Disable the pickup simulator.
-16. Remove low-voltage power.
-17. Save logs or captures under the bench artifact folders only if they will be linked from a report.
+1. Confirm [low-voltage dry-run readiness](low-voltage-dry-run-readiness.md) and keep the result as setup notes, not validation evidence.
+2. Record operator, date, hardware revision, firmware or script revision, and bench setup reference.
+3. Confirm the required safe state and attach a setup photo or wiring diagram reference.
+4. Set the low-voltage bench supply current limit for controller-only work.
+5. Connect the pickup simulator or logic source with output disabled.
+6. Apply low-voltage power.
+7. Confirm low-voltage rails are stable.
+8. Confirm `CHARGE_EN` is inactive.
+9. Confirm `TRIGGER_CMD` is inactive before pickup pulses are applied.
+10. Enable the pickup simulator at the first low RPM-equivalent rate.
+11. Record RPM, advance, `vbat`, event, and error fields if logging is available.
+12. Observe the low-voltage timing output with a scope or logic analyzer.
+13. Repeat at the planned dry-run RPM-equivalent rates.
+14. Trigger a reset or watchdog-equivalent event if the setup supports it.
+15. Confirm `CHARGE_EN` and `TRIGGER_CMD` return to inactive safe state.
+16. Disable the pickup simulator.
+17. Remove low-voltage power.
+18. Save logs or captures under the bench artifact folders only if they will be linked from a report.
 
 ## Abort Criteria
 
