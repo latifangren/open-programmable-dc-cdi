@@ -1,0 +1,36 @@
+name: Repository structure check
+
+on:
+  push:
+    paths:
+      - "**"
+  pull_request:
+    paths:
+      - "**"
+
+permissions:
+  contents: read
+
+jobs:
+  repo-structure-check:
+    name: Documentation-stage hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Check required project structure
+        run: node tools/ci/check-repo-structure.mjs
+
+      - name: Check release hygiene wording
+        run: node tools/ci/check-release-hygiene.mjs
+
+      - name: Check unexpected binary files
+        run: node tools/ci/check-binary-files.mjs
