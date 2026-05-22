@@ -18,6 +18,7 @@ The requirements below define what the first bench-oriented power core must be a
 - [../../docs/12-board-interface-contract.md](../../docs/12-board-interface-contract.md) - controller/power-board signal behavior.
 - [../../docs/14-requirements-traceability.md](../../docs/14-requirements-traceability.md) - current requirement and test IDs.
 - [../../docs/15-first-prototype-decisions.md](../../docs/15-first-prototype-decisions.md) - v0.1 bench-prototype candidate decisions.
+- [../../docs/validation/bench-test-template.md](../../docs/validation/bench-test-template.md) - template for future measured bench reports; not completed validation evidence.
 - [../../docs/research/source-backed-parts-research.md](../../docs/research/source-backed-parts-research.md) - research-only component shortlist.
 - [schematic-checklist.md](schematic-checklist.md) - schematic review gate.
 

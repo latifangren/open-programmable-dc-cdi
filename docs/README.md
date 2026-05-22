@@ -24,6 +24,7 @@ These documents are the engineering source of truth for the project. The raw res
 ## Pre-Schematic Research Links
 
 - [research/source-backed-parts-research.md](research/source-backed-parts-research.md) - compact source-backed component candidate summary; still `Research only`.
+- [validation/bench-test-template.md](validation/bench-test-template.md) - template for future bench validation reports; not bench evidence by itself.
 - [../hardware/cdi-power-board/requirements.md](../hardware/cdi-power-board/requirements.md) - CDI power-board pre-schematic requirements; not a schematic or BOM.
 - [../hardware/cdi-power-board/schematic-checklist.md](../hardware/cdi-power-board/schematic-checklist.md) - CDI power-board pre-schematic review checklist; not a schematic or BOM.
 
