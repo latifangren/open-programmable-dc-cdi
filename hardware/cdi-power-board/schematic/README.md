@@ -2,7 +2,7 @@
 
 Placeholder for future schematic files.
 
-Before schematic capture, review [../schematic-checklist.md](../schematic-checklist.md). Passing that checklist still does not create a validated design, BOM, PCB, or engine-test permission.
+Before schematic capture, review [../requirements.md](../requirements.md) and [../schematic-checklist.md](../schematic-checklist.md). Passing those gates still does not create a validated design, BOM, PCB, or engine-test permission.
 
 Required schematic blocks:
 
