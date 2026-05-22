@@ -86,6 +86,8 @@ Start here:
 - [Failure modes](docs/13-failure-modes.md)
 - [Requirements traceability](docs/14-requirements-traceability.md)
 - [First prototype decisions](docs/15-first-prototype-decisions.md)
+- [Source-backed parts research](docs/research/source-backed-parts-research.md)
+- [CDI power-board schematic checklist](hardware/cdi-power-board/schematic-checklist.md)
 - [Research archive](docs/research/README.md)
 
 ## Repository Layout

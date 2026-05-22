@@ -6,7 +6,7 @@ These documents are the engineering source of truth for the project. The raw res
 
 1. [00-project-goals.md](00-project-goals.md) - project identity, scope, and non-goals.
 2. [01-cdi-theory.md](01-cdi-theory.md) - CDI vs TCI vs trigger-controller distinction.
-3. [02-system-architecture.md](02-system-architecture.md) - final controller board and CDI power board split.
+3. [02-system-architecture.md](02-system-architecture.md) - planned controller board and CDI power board split.
 4. [03-electrical-spec.md](03-electrical-spec.md) - draft electrical targets and open decisions.
 5. [04-hv-safety.md](04-hv-safety.md) - high-voltage safety rules and test gates.
 6. [05-bench-test-plan.md](05-bench-test-plan.md) - bench-first validation before engine testing.
@@ -20,6 +20,11 @@ These documents are the engineering source of truth for the project. The raw res
 14. [13-failure-modes.md](13-failure-modes.md) - draft failure-mode list with detection, mitigation direction, and test coverage IDs.
 15. [14-requirements-traceability.md](14-requirements-traceability.md) - requirement IDs mapped to planned verification artifacts.
 16. [15-first-prototype-decisions.md](15-first-prototype-decisions.md) - first HV prototype candidate decisions and remaining schematic blockers.
+
+## Pre-Schematic Research Links
+
+- [research/source-backed-parts-research.md](research/source-backed-parts-research.md) - compact source-backed component candidate summary; still `Research only`.
+- [../hardware/cdi-power-board/schematic-checklist.md](../hardware/cdi-power-board/schematic-checklist.md) - CDI power-board pre-schematic review checklist; not a schematic or BOM.
 
 ## Source Rules
 
